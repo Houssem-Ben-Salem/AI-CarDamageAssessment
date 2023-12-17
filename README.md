@@ -51,21 +51,7 @@ Utilizes a latent consistency model with LLAVA-generated prompts based on an ori
 ## Getting Started
 
 ### Installation
-Instructions on how to install and set up the tool.
-
-### Usage
-A guide on how to effectively use the tool, including uploading images and interpreting reports.
-
-### Examples
-Provide example cases or demonstrations of the tool in action.
-
-## Contribution
-
-### Contributing Guidelines
-Information on how interested individuals can contribute to the project.
-
-### Code of Conduct
-The principles guiding interactions and contributions within this project.
-
-## License
-Details of the licensing agreement governing the use and distribution of this tool.
+1. Clone or download this repository.
+2. Install the required packages from `requirements.txt`.
+3. Download the `llama.cpp` folder from [this link](https://github.com/ggerganov/llama.cpp).
+4. Contact me at [houssem.ben.salam@gmail.com](mailto:houssem.ben.salam@gmail.com) to obtain the necessary model weights.

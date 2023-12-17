@@ -20,7 +20,7 @@ Utilizes advanced object detection algorithms, including YOLO, Mask R-CNN, and C
 Employs ResNet for feature extraction, enhanced with an attention mechanism, to categorize car damage into different severity levels.
 
 ### Cost Prediction
-Combines CLIP with neural network analysis to estimate repair costs, providing users with a data-driven approach to financial planning and insurance claims.
+Involves a two-phase approach where CLIP is first trained to match images with damage descriptions. Subsequently, CLIP encodes these matched pairs, which are then fed into a neural network to predict the repair cost range. This method ensures a more accurate and detailed estimation of repair costs, aligning with the specific damages identified in the images.
 
 ### LLAVA Integration
 Leveraging LLAVA for detailed and accurate damage descriptions.

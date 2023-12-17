@@ -389,32 +389,34 @@ def display_model_performance_page():
                           yaxis=dict(range=[0, 1]))  # Adjust y-axis range if needed
         st.plotly_chart(fig)
 
-    # Example metrics for multiclass problems (placeholder values)
+    # Example metrics for multiclass problems
     # Feature 1: Fake/Real Image Detector
-    feature_1_models = ["Model 1", "Model 2", "Model 3"]
+    feature_1_models = ["Dual stream model", "Frequency domain only ", "Resnet only"]
     feature_1_metrics = {
-        "Accuracy": [0.90, 0.92, 0.88],
-        "F1 Score": [0.89, 0.91, 0.87],
-        "Recall": [0.88, 0.90, 0.86],
-        "Precision": [0.87, 0.89, 0.85]
+        "Accuracy": [0.97, 0.92, 0.88],
+        "F1 Score": [0.91, 0.88, 0.87],
+        "Recall": [0.90, 0.90, 0.86],
+        "Precision": [0.87, 0.86, 0.85]
     }
     display_feature_performance("Fake/Real Image Detector", feature_1_models, feature_1_metrics)
 
     # Feature 2: Severity Assessment
-    severity_models = ["Severity Model 1", "Severity Model 2"]
+    severity_models = ["Resnet only","Resnet + Attention mechanism"]
     severity_metrics = {
-        "Weighted F1 Score": [0.75, 0.78],
-        "Weighted Precision": [0.76, 0.79],
-        "Weighted Recall": [0.74, 0.77]
+        "Accuracy": [0.79,0.83],
+        "F1 Score": [0.75, 0.78],
+        "Precision": [0.76, 0.79],
+        " Recall": [0.74, 0.77]
     }
     display_feature_performance("Severity Assessment", severity_models, severity_metrics)
 
     # Feature 3: Cost Range Prediction
-    cost_models = ["Cost Model A", "Cost Model B"]
+    cost_models = ["BERT + Resnet + NN","CLIP + NN"]
     cost_metrics = {
-        "Weighted F1 Score": [0.65, 0.68],
-        "Weighted Precision": [0.66, 0.69],
-        "Weighted Recall": [0.64, 0.67]
+        "Acurracy": [0.68, 0.72],
+        "F1 Score": [0.65, 0.68],
+        "Precision": [0.66, 0.69],
+        "Recall": [0.64, 0.67]
     }
     display_feature_performance("Cost Range Prediction", cost_models, cost_metrics)
 
@@ -441,19 +443,17 @@ def display_model_performance_page():
         st.plotly_chart(fig)
 
     # Placeholder values for Damage Detection feature
-    damage_detection_models = ["DD Model 1", "DD Model 2", "DD Model 3"]
+    damage_detection_models = ["YOLO", "Mask R-CNN", "Cascade Mask R-CNN"]
     damage_detection_metrics = {
-        'bbox': {
-            "AP": [0.45, 0.48, 0.50],
-            "AP50": [0.65, 0.68, 0.70],
-            "AP75": [0.40, 0.43, 0.45],
-            "mAP": [0.50, 0.53, 0.55]
+        'segm': {
+            "AP": [0.743, 0.63, 0.7],
+            "AP50": [0.65, 0.78, 0.79],
+            "AP75": [0.40, 0.66, 0.66],
         },
-        'seg': {
-            "AP": [0.46, 0.49, 0.51],
-            "AP50": [0.66, 0.69, 0.71],
-            "AP75": [0.41, 0.44, 0.46],
-            "mAP": [0.51, 0.54, 0.56]
+        'bbox': {
+            "AP": [0.64, 0.52, 0.52],
+            "AP50": [0.76, 0.72, 0.72],
+            "AP75": [0.51, 0.37, 0.47],
         }
     }
     display_detection_performance("Damage Detection", damage_detection_models, damage_detection_metrics)

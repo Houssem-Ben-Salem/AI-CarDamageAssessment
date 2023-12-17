@@ -55,3 +55,7 @@ Utilizes a latent consistency model with LLAVA-generated prompts based on an ori
 2. Install the required packages from `requirements.txt`.
 3. Download the `llama.cpp` folder from [this link](https://github.com/ggerganov/llama.cpp).
 4. Contact me at [houssem.ben.salam@gmail.com](mailto:houssem.ben.salam@gmail.com) to obtain the necessary model weights.
+
+### Usage
+
+Follow the in-app guide to upload images, analyze damage, and generate reports. Check model performance on the dedicated "Models Performance" page within the app.

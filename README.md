@@ -5,6 +5,9 @@ This repository houses the AI Car Damage Assessment Tool, an advanced solution f
 
 ![image](https://github.com/Houssem-Ben-Salem/AI-CarDamageAssessment/assets/93081419/8806caf6-5845-4887-800d-cdbe7d226745)
 
+![image](https://github.com/Houssem-Ben-Salem/AI-CarDamageAssessment/assets/93081419/fcf107bb-b964-4c85-a2ef-a3bf4df43d2c)
+
+
 ## Features
 
 ### AI Realness Check

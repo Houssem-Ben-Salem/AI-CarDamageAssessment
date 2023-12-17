@@ -38,8 +38,8 @@ config = pdfkit.configuration(wkhtmltopdf=path_wkhtmltopdf)
 
 # Load the fine-tuned CLIP model and cost prediction model
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-clip_model = cost_predictor.load_clip_model('/home/hous/Desktop/LLAVA/best_matching_model.pth', "cpu")
-cost_model = cost_predictor.load_cost_model('/home/hous/Desktop/LLAVA/best_cost_prediction_model.pth', clip_model, "cpu")
+clip_model = cost_predictor.load_clip_model('/home/hous/Desktop/LLAVA/best_matching_model.pth', device)
+cost_model = cost_predictor.load_cost_model('/home/hous/Desktop/LLAVA/best_cost_prediction_model.pth', clip_model, device)
 if cost_model is None:
     st.error("Failed to load the cost prediction model.")
 # Retrieve metadata
@@ -174,7 +174,6 @@ def display_home_page():
     
     if 'uploaded_image' in st.session_state and st.session_state['uploaded_image'] is not None:
             pil_image = Image.open(st.session_state['uploaded_image']).convert('RGB')
-            st.markdown('image not displaying')
             st.image(pil_image, caption='Uploaded Image', use_column_width=True)
     # AI Check
     if st.button('Check if Image is Real or AI-Generated'):

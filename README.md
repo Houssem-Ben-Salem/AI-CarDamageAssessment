@@ -22,8 +22,8 @@ Employs ResNet for feature extraction, enhanced with an attention mechanism, to 
 ### Cost Prediction
 Combines CLIP with neural network analysis to estimate repair costs, providing users with a data-driven approach to financial planning and insurance claims.
 
-### LLAVA CLI Integration
-Processes images via a command-line interface, leveraging LLAVA for detailed and accurate damage descriptions.
+### LLAVA Integration
+Leveraging LLAVA for detailed and accurate damage descriptions.
 
 ### Interactive User Interface
 Features a user-friendly and intuitive interface, facilitating smooth navigation and interaction for an efficient user experience.
@@ -45,8 +45,8 @@ Incorporates YOLO, Mask R-CNN, and Cascade Mask R-CNN for precise and detailed d
 ### Cost Prediction Methodology
 Employs CLIP for initial image and damage description correlation, followed by neural network analysis for cost estimation.
 
-### AI-Generated Damaged Cars Analysis
-Utilizes a latent consistency model with LLAVA-generated prompts based on an original dataset of damaged cars for enhanced analysis accuracy.
+### AI-Generated Damaged Cars Generation
+Utilizes a latent consistency model and LLAVA-generated prompts based on an original dataset of damaged cars to generate fake damaged cars.
 
 ## Getting Started
 

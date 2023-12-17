@@ -1,0 +1,126 @@
+/* style.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Modern Google font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f6; /* Soft background color */
+    color: #333; /* Default text color */
+    line-height: 1.6; /* Spacing for line height */
+}
+
+/* Background Gradient (for a more modern look instead of an image) */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #a8c0ff, #3f2b96); /* Gradient background */
+    z-index: -1; /* Ensures that the background is behind the content */
+    opacity: 0.85; /* Adjust for background visibility */
+}
+
+/* Button Styling */
+button {
+    background-color: #008CBA; /* Fresh button background color */
+    color: white; /* Button text color */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px; /* Rounded corners for buttons */
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transition: background-color 0.3s ease-out, transform 0.2s ease-out; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #006494; /* Button hover background color */
+    transform: translateY(-2px); /* Slight lift when hovered */
+}
+
+button:active {
+    transform: translateY(1px); /* Slight press-down effect */
+}
+
+/* Sidebar Styling */
+.sidebar .sidebar-content {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white for sidebar background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners for sidebar */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+/* File Uploader Styling */
+input[type="file"] {
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd; /* Subtle border for file input */
+    background-color: white;
+    transition: background-color 0.3s ease-out; /* Smooth transition for hover effects */
+}
+
+input[type="file"]:hover {
+    background-color: #f9f9f9; /* Light grey background on hover */
+}
+
+/* Add styling for other elements as needed */
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    border-bottom: 1px dotted #007bff; /* Style for tooltip trigger (typically a dotted underline) */
+    color: #007bff; /* Color for tooltip trigger text */
+    text-decoration: none; /* No underline for the link */
+    position: relative; /* Required to position the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Show tooltip text on hover */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden; /* Hide tooltip text by default */
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0; /* Padding for tooltip text */
+
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1; /* Ensure the tooltip is above other items */
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Center the tooltip */
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    body::before {
+        background: linear-gradient(to bottom, #a8c0ff, #3f2b96); /* Vertical gradient on smaller screens */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on smaller screens */
+        margin-bottom: 10px; /* Space between stacked buttons */
+    }
+
+    .sidebar .sidebar-content {
+        margin-bottom: 20px; /* Space below sidebar when stacked on top */
+    }
+}
